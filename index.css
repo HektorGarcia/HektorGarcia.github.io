@@ -56,7 +56,59 @@ body {
     margin: 0.5rem 0 0;
     color: #ddd;
   }
-  
+  /* Sección de publicaciones */
+  #publications {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: rgba(50, 50, 70, 0.9); /* Fondo oscuro ligeramente distinto */
+    color: white;
+  }
+
+  #publications h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .publications-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .publication-card {
+    background-color: rgba(80, 80, 120, 0.9); /* Fondo ligeramente diferente */
+    padding: 1.5rem;
+    border: 1px solid #5f5f9f; /* Borde azul grisáceo */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    color: white;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .publication-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .publication-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .publication-card a {
+    display: inline-block;
+    color: #ffcc00; /* Color de enlace */
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .publication-card a:hover {
+    text-decoration: underline;
+    color: #ffd700; /* Color más claro al pasar el mouse */
+  }
   /* Sección de proyectos */
   #projects {
     padding: 2rem 1rem;
