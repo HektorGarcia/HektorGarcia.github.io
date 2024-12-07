@@ -1,160 +1,182 @@
 /* General */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-image: url('./Images/background.jpg'); /* Imagen de fondo en toda la página */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Fija el fondo al scroll */
-    color: #fff; /* Cambia a blanco para contraste */
-  }
-  
-  /* Encabezado */
-  header {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
-    color: white;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  header .contact-info a {
-    color: white;
-    text-decoration: none;
-    margin: 0 1rem;
-  }
-  
-  header .contact-info a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Sección central (Nombre y Profesión) */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('./Images/background.jpg'); /* Imagen de fondo en toda la página */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Fija el fondo al scroll */
+  color: #fff; /* Cambia a blanco para contraste */
+}
+
+/* Sección central (Nombre y Profesión) */
 #hero {
-    height: 60vh; /* Tamaño más grande */
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 4rem;
-  }
-  
-  .hero-content {
-    max-width: 50%;
-    text-align: left;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
-    padding: 1rem;
-    border-radius: 10px;
-    margin-left: 5rem; /* Mueve el contenedor más a la derecha */
-  }
-  
-  #hero h1 {
-    font-size: 4rem;
-    margin: 0;
-  }
-  
-  #hero p {
-    font-size: 1.5rem;
-    margin: 0.5rem 0 0;
-    color: #ddd;
-  }
-  /* Sección de publicaciones */
-  #publications {
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: rgba(50, 50, 70, 0.9); /* Fondo oscuro ligeramente distinto */
-    color: white;
-  }
+  height: 60vh; /* Tamaño más grande */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4rem;
+}
 
-  #publications h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
+.hero-content {
+  max-width: 50%;
+  text-align: left;
+  background-color: rgb(79, 123, 107); /* Fondo semitransparente */
+  padding: 1rem;
+  border-radius: 10px;
+  margin-left: 5rem; /* Mueve el contenedor más a la derecha */
+}
 
-  .publications-grid {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-  }
+#hero h1 {
+  font-size: 4rem;
+  margin: 0;
+}
 
-  .publication-card {
-    background-color: rgba(80, 80, 120, 0.9); /* Fondo ligeramente diferente */
-    padding: 1.5rem;
-    border: 1px solid #5f5f9f; /* Borde azul grisáceo */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: left;
-    color: white;
-    max-width: 600px;
-    width: 100%;
-  }
+#hero p {
+  font-size: 1.5rem;
+  margin: 0.5rem 0 0;
+  color: #ddd;
+}
 
-  .publication-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
+/* Caja de contacto debajo del nombre */
+.contact-box {
+  margin-top: 2rem;
+  text-align: left;
+}
 
-  .publication-card p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
+.contact-box a {
+  display: flex;
+  align-items: center; /* Alinea los elementos */
+  color: #fff;
+  text-decoration: none;
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
 
-  .publication-card a {
-    display: inline-block;
-    color: #ffcc00; /* Color de enlace */
-    text-decoration: none;
-    font-weight: bold;
-  }
+.contact-box a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
 
-  .publication-card a:hover {
-    text-decoration: underline;
-    color: #ffd700; /* Color más claro al pasar el mouse */
-  }
-  /* Sección de proyectos */
-  #projects {
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: rgba(76, 28, 125, 0.9); /* Fondo magenta azulado translúcido */
-    color: white;
-  }
-  
-  #projects h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-  }
-  
-  .project-card {
-    background-color: #5f298f; /* Un magenta azulado ligeramente más claro */
-    padding: 1.5rem;
-    border: 1px solid #6939a6; /* Borde más oscuro para definir las tarjetas */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    color: white;
-    font-weight: bold;
-  }
-  
-  .project-card:hover {
-    background-color: #7640b8; /* Efecto hover: más claro */
-    transform: scale(1.05);
-    transition: 0.3s ease;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
-    color: white;
-  }
-  
-  footer a {
-    color: #ccc;
-    text-decoration: none;
-  }
-  
+.contact-box a:last-child {
+  font-weight: bold;
+  background-color: #5f298f;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.contact-box a:last-child:hover {
+  background-color: #7640b8;
+}
+
+/* Estilo para las imágenes de los logos */
+.social-logo {
+  width: 50px; /* Tamaño del logo */
+  height: 50px;
+  margin-right: 0.5rem; /* Espacio entre la imagen y el texto */
+}
+
+/* Sección de publicaciones */
+#publications {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: rgba(50, 50, 70, 0.9); /* Fondo oscuro ligeramente distinto */
+  color: white;
+}
+
+#publications h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.publications-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.publication-card {
+  background-color: rgba(80, 80, 120, 0.9); /* Fondo ligeramente diferente */
+  padding: 1.5rem;
+  border: 1px solid #5f5f9f; /* Borde azul grisáceo */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  color: white;
+  max-width: 600px;
+  width: 100%;
+}
+
+.publication-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.publication-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.publication-card a {
+  display: inline-block;
+  color: #ffcc00; /* Color de enlace */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.publication-card a:hover {
+  text-decoration: underline;
+  color: #ffd700; /* Color más claro al pasar el mouse */
+}
+
+/* Sección de proyectos */
+#projects {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: rgba(76, 28, 125, 0.9); /* Fondo magenta azulado translúcido */
+  color: white;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.project-card {
+  background-color: #5f298f; /* Un magenta azulado ligeramente más claro */
+  padding: 1.5rem;
+  border: 1px solid #6939a6; /* Borde más oscuro para definir las tarjetas */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.project-card:hover {
+  background-color: #7640b8; /* Efecto hover: más claro */
+  transform: scale(1.05);
+  transition: 0.3s ease;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  color: white;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
